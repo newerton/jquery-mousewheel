@@ -67,11 +67,23 @@
 
         settings: {
             adjustOldDeltas: true
+        },
+
+        trigger: function(data, event) {
+          if (!event) {
+            event = data;
+            data = null
+          }
+
+          handler.call(this, event);
+
+          return false;
         }
     };
 
     function handler(event) {
-        var orgEvent   = event || window.event,
+        // might be trigged event, so check for the originalEvent first
+        var orgEvent   = event ? event.originalEvent || event : window.event,
             args       = slice.call(arguments, 1),
             delta      = 0,
             deltaX     = 0,
