@@ -1,7 +1,7 @@
 /*! Copyright (c) 2013 Brandon Aaron (http://brandon.aaron.sh)
  * Licensed under the MIT License (LICENSE.txt).
  *
- * Version: 3.1.9
+ * Version: 4.0.0-pre
  *
  * Requires: jQuery 1.7+
  */
@@ -32,7 +32,7 @@
     }
 
     var special = $.event.special.mousewheel = {
-        version: '3.1.9',
+        version: '4.0.0-pre',
 
         setup: function() {
             if ( this.addEventListener ) {
