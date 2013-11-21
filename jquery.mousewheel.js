@@ -232,12 +232,12 @@
                             return oldHandler.apply(elem, args);
                         },
                         maxDelayed = function() {
-                            run();
                             maxTimeout = null;
+                            return run();
                         },
                         delayed = function() {
                             clear();
-                            if ( trailing ) { run(); }
+                            if ( trailing ) { return run(); }
                         },
                         result;
 
