@@ -55,5 +55,13 @@
     "qunit": "^2.14.1",
     "requirejs": "^2.3.6",
     "uglify-js": "^3.13.3"
+  },
+  "overrides": {
+    "ajv": "^6.14.1",
+    "brace-expansion": "^1.1.13",
+    "cross-spawn": "^7.0.5",
+    "js-yaml": "^4.1.2",
+    "socket.io-parser": "^4.2.6",
+    "ws": "^8.20.2"
   }
 }
